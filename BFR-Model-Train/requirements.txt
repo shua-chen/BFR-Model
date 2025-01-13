@@ -12,3 +12,4 @@ xformers
 huggingface-hub
 datasets
 einops
+basicsr
