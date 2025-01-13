@@ -1,0 +1,7 @@
+FFHQ/
+logs/
+__pycache__/
+/train
+/test
+.git/
+/BFR-Model-Train/pretrained_weights/*.safetensors
