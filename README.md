@@ -30,7 +30,11 @@ bash train_cluste.sh
 The output will be saved in `trains/example`.
 
 
-For inference, run the script:
+For inference, first download the pretrained model from [here](https://drive.google.com/drive/folders/1mWBG_xzzwBm4rLYoKMCprXUr1i8qaS2V?usp=sharing) and put it in `pretrained_models/`.
+
+Put the image path you want to restore in `--validation_image` in script.sh.
+
+Then run the script:
 
 ```bash
 bash script.sh
