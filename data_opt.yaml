@@ -1,0 +1,23 @@
+log_folder: '/scratch/students/2024-fall-shuhua/code/sp/logs'
+
+mean: [0.5, 0.5, 0.5]
+std: [0.5, 0.5, 0.5]
+out_size: 1024
+
+resolution: 1024
+blur_kernel_size: 41
+kernel_list: ['iso', 'aniso']
+kernel_prob: [0.5, 0.5]
+blur_sigma: [0.1, 10]
+downsample_range: [0.8, 8]
+noise_range: [0, 20]
+jpeg_range: [60, 100]
+
+# color jitter and gray
+#color_jitter_prob: 0.3
+#color_jitter_shift: 20
+#color_jitter_pt_prob: 0.3
+#gray_prob: 0.01
+
+use_hflip: True
+use_vflip: False
