@@ -448,9 +448,9 @@ class ControlNetModel(ModelMixin, ConfigMixin):
 
 
         # cssft blocks
-        # self.cssfts = nn.ModuleList()
-        # for i in range(3):
-        #     self.cssfts.append(CSSFT(in_channels=final_out_channels[i],control_channels=final_out_channels[i],kernel_size=3,stride=1,padding=1))
+        self.cssfts = nn.ModuleList()
+        for i in range(3):
+            self.cssfts.append(CSSFT(in_channels=final_out_channels[i],control_channels=final_out_channels[i],kernel_size=3,stride=1,padding=1))
         self.scale = 1.0  # nn.Parameter(torch.tensor(1.))
 
     def _set_gradient_checkpointing(self, module, value=False):

@@ -1256,8 +1256,8 @@ class UNet2DConditionModel(
                 mean_control, std_control = torch.mean(control, dim=(1,2, 3), keepdim=True), torch.std(control, dim=(1,2, 3), keepdim=True)
                 control = (control - mean_control) * (std_latents / (std_control + 1e-12)) + mean_latents
                 #sample=(sample-mean_latents)*std_control/(std_latents+1e-12)+mean_control
-                sample =sample + scale*control
-                #sample = controls['cssfts'][i](sample, control, scale)
+                #sample =sample + scale*control
+                sample = controls['cssfts'][i](sample, control, scale)
 
         if is_controlnet:
             new_down_block_res_samples = ()
